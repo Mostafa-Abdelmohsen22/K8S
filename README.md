@@ -172,4 +172,12 @@ spec:
   -  image: nginx
      name: nginx
 ```
-
+### controlplane ~ ➜  kubectl get pods --namespace kube-system 
+# NAME                                   READY   STATUS    RESTARTS   AGE
+# coredns-7484cd47db-9x26h               1/1     Running   0          21m
+# coredns-7484cd47db-d7mfv               1/1     Running   0          21m
+# etcd-controlplane                      1/1     Running   0          21m
+# kube-apiserver-controlplane            1/1     Running   0          21m
+# kube-controller-manager-controlplane   1/1     Running   0          21m
+# kube-proxy-n879n                       1/1     Running   0          21m
+# kube-proxy-wkjc4     
