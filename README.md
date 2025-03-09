@@ -158,3 +158,18 @@ spec:
 ### **Conclusion**
 
 Kubernetes scheduling ensures efficient resource utilization and workload placement across nodes. By leveraging scheduling constraints like **affinity rules, resource requests, and priorities**, administrators can optimize pod distribution and maintain high availability.
+### **Manually schedule the pod on node01.**
+#### **4. Pod Affinity & Anti-Affinity**
+```yaml
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  nodeName: node01
+  containers:
+  -  image: nginx
+     name: nginx
+```
+
